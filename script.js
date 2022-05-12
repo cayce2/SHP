@@ -1,43 +1,34 @@
-//TOP NAVIGATION
-function NavBar() {
-var x = document.getElementById("myTopnav");
-if (x.className === "topnav") {
-x.className += " responsive";
-} else {
-x.className = "topnav";
-}
-}
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-document.getElementById("myTopnav").style.width = "100%";
-document.getElementById("myTopnav").style.backgroundColor = "rgba(6, 18, 33, 1)";
-document.getElementById("header").style.position = "fixed";
-document.getElementById("header").style.top = "0%";
-} else {
-document.getElementById("myTopnav").style.width = "100%";
-document.getElementById("myTopnav").style.backgroundColor = "rgba(6, 18, 33, 0.8)";
-document.getElementById("header").style.position = "fixed";
-document.getElementById("header").style.top = "2rem";
-}
-}
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
 
-/* Demo purposes only */
-$(".hover").mouseleave(
-    function () {
-      $(this).removeClass("hover");
-    }
-  );
-
-  
-  $('.readmore').click(function() {
-    $('.content').toggleClass('full');
-    $('.header').toggleClass('collapse');
-    $('.readmore').toggle();
-  });
-  $('.closebttn').click(function() {
-    $('.content').removeClass('full');
-    $('.header').removeClass('collapse');
-    $('.readmore').toggle();
-  });
-  
+$('.readmore').click(function() {
+  $('.content').toggleClass('full');
+  $('.header').toggleClass('collapse');
+  $('.readmore').toggle();
+});
+$('.closebttn').click(function() {
+  $('.content').removeClass('full');
+  $('.header').removeClass('collapse');
+  $('.readmore').toggle();
+});

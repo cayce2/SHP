@@ -1,133 +1,74 @@
+<!-- navigation -->
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>SacredHeartParish - Dagoretti</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./style5.css">
+  <title>sacredheartparishdagoretti</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
 
-
-</head>
-
-<!-- partial:index.partial.html -->
-<!--FONT AWESOME-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!--GOOGLE FONTS-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet"> 
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<!-- responsive nav-->
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#"><img class="logo" src="https://www.kindpng.com/picc/m/49-494873_transparent-virgen-maria-png-sacred-heart-of-jesus.png" alt=""></a>
+    </div>
+    <nav>
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#!"><span></span></a>
+      </div>
+      <ul class="nav-list">
+        <!-- Setting the links to #! will ensure that no action takes place on click. -->
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#!">Office</a>
+          <ul class="nav-dropdown">
+            <li><a href="clergy.html">Cleargy</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+          </ul>
+        </li>
+        <li><a href="#!">Ministries</a>
+          <ul class="nav-dropdown">
+            <li><a href="#!">Liturgy</a></li>
+            <li><a href="#!">Sick</a></li>
+            <li><a href="#!">Mariage Encounter</a></li>
+            <li><a href="#!">Welfare</a></li>
+            <li><a href="#!">Catechism</a></li>
+            <li><a href="#!">Youth</a></li>
+            <li><a href="#!">Small Christian Communities</a></li>
+          </ul>
+        </li>
+        <li><a href="#!">Ecclecial Groups</a>
+          <ul class="nav-dropdown">
+            <li><a href="./readmore/eclecialgroups/cwa.html">C.W.A</a></li>
+            <li><a href="./readmore/eclecialgroups/cma.html">C.M.A</a></li>
+            <li><a href="./readmore/eclecialgroups/yca.html">Y.C.A</a></li>
+            <li><a href="./readmore/eclecialgroups/ysc.html">Y.S.C</a></li>
+            <li><a href="#!">M.Y.M</a></li>
+            <li><a href="./readmore/eclecialgroups/pmc.html">P.M.C</a></li>
+            <li><a href="./readmore/eclecialgroups/uca.html">U.C.A</a></li>
+            <li><a href="./readmore/eclecialgroups/ccr.html">Cathoilc Charismatic</a></li>
+            <li><a href="#!">Legion of Mary</a></li>
+            <li><a href="./readmore/eclecialgroups/cjpc.html">C.J.P.C</a></li>
 
-<!--TOP NAVIGATION-->
-<header id="header">
-<div class="topnav" id="myTopnav">
-<a href="#"><img class="logo" src="https://www.kindpng.com/picc/m/49-494873_transparent-virgen-maria-png-sacred-heart-of-jesus.png" alt=""></a>
-<a id="active">S.H.P</a>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<div class="dropdown">
-<button class="dropbtn"> Office
-<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-content animate">
-<a href="clergy.html">Clergy</a>
-<a href="leadership.html">Leadership</a>
-</div>
-</div> 
-<div class="dropdown">
-<button class="dropbtn"> Ministiries
-<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-content animate">
-<a href="#">Liturgy</a>
-<a href="#">Sick</a>
-<a href="#">Mariage Encounter</a>
-<a href="#">Welfare</a>
-<a href="#">Catechism</a>
-<a href="#">Youth</a>
-</div>
-</div> 
-  <div class="dropdown">
-<button class="dropbtn"> Ecclesial Groups
-<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-content animate">
-<a href="./readmore/eclecialgroups/cwa.html">CWA</a>
-<a href="./readmore/eclecialgroups/cma.html">CMA</a>
-  <a href="./readmore/eclecialgroups/pmc.html">PMC</a>
-  <a href="#">MYM</a>
-  <a href="#">YOUTH</a>
-  <a href="./readmore/eclecialgroups/yca.html">YCA</a>
-  <a href="./readmore/eclecialgroups/ccr.html">CATHOLIC CHARISMATIC</a>
-  <a href="#">LEGION OF MARY </a>
-  <a href="./readmore/eclecialgroups/uca.html">UNION OF THE CATHOLIC APOSTOLATE </a>
-  <a href="./readmore/eclecialgroups/cjpc.html">CJPC </a>
-</div>
-</div> 
-  <div class="dropdown">
-<button class="dropbtn"> S.C.C
-<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-content animate">
-<a href="#">SACRED HEART</a>
-<a href="#">MARY MOTHER</a>
-<a href="#">ST. FRANCIS</a>
-<a href="#">ST DANIEL</a>
-<a href="#">ST PETER</a>
-<a href="#">ST JACINTA</a>
-<a href="#">ST CECILIA</a>
-<a href="#">ST BAHKITA</a>
-<a href="#">ST ANTHONY</a>
-<a href="#">SST TERESA</a>
-<a href="#">ST ELIZABETH</a>
-<a href="#">ST CATHERINE SIENA</a>
-<a href="#">ST LUCY</a>
-<a href="#">ST FAUSTINE</a>
-<a href="#">ST DOMINIC</a>
-<a href="#">ST AMBROSE</a>
-<a href="#">ST MONICA</a>
-<a href="#">ST JOSEPH</a>
-<a href="#">ST JAMES</a>
-<a href="#">ST JEROME</a>
-<a href="#">ST CHARLES LWANGA</a>
-<a href="#">ST BONVENTURE</a>
-<a href="#">BLESSED ELIZABETH SANNA</a>
-<a href="#">ST BRUNO</a>
-<a href="#">ST GABRIEL</a>
-<a href="#">ST VERONICA</a>
-<a href="#">ST VINCENT</a>
-<a href="#">ST AGNES</a>
-<a href="#">ST PHILOMENA</a>
-<a href="#">ST AUGUSTINE</a>
-<a href="#">ST RAPHAEL</a>
-<a href="#">ST MICHAEL</a>
-<a href="#">ST JOHN</a>
-<a href="#">ST ANN AND JOACHIM</a>
-<a href="#">ST KIZITO</a>
-<a href="#">ST PADRE PIO</a>
-<a href="#">ST JOHN PAUL II</a>
-<a href="#">UGNADA MATYRS</a>
-<a href="#">ST BARNABAS</a>
-<a href="#">ST PAUL</a>
-<a href="#">ST MARY</a>
-<a href="#">ST MARTIN</a>
-<a href="#">ST OSCAR LOMERO</a>
-<a href="#">ST STEPHEN</a>
-<a href="#">ST VINCENT PALOTTI</a>
-<a href="#">ST FRANCIS XAVIER</a>
+          </ul>
+        </li>
+        <li><a href="articles.html">Article</a></li>
+        <li><a href="#!">Institution</a></li>
+        <li><a href="#!">Contact</a></li>
+        <li><a href="./readmore/mass.html">Masses</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
 
-</div>
-</div> 
-<a href="contact.htm">Contact</a>
-<a href="#contact">Institution</a>
-<a href="donate.html">donate</a>
+<!-- navigation -->
 
-
-</div>
-</header>
-
+<!--END NAV-->
 </head>
 <body>
   <div class="container">
@@ -138,4 +79,8 @@
     </div>
     </div>
 </body>
+<script  src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
 </html>
