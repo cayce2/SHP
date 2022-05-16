@@ -881,7 +881,53 @@ img {
 
 
 
+/*contact*/
 
+
+.contact-info {
+display: inline-block;
+width: 100%;
+text-align: center;
+margin-bottom: 10px;
+}
+.contact-info-icon {
+margin-bottom: 15px;
+}
+.contact-info-item {
+background: #071c34;
+padding: 30px 0px;
+}
+
+
+
+.contact-info-icon i {
+font-size: 48px;
+color: #fda40b;
+}
+.contact-info-text p{margin-bottom:0px;}
+.contact-info-text h2 {
+color: #fff;
+font-size: 22px;
+text-transform: capitalize;
+font-weight: 600;
+margin-bottom: 10px;
+}
+.contact-info-text span {
+color: #999999;
+font-size: 16px;
+font-weight: ;
+display: inline-block;
+width: 100%;
+}
+
+
+.contact-page-map {
+margin-top: 36px;
+width:50%;
+
+}
+
+/*contact*/
   
 /*footer*/
 
@@ -930,7 +976,7 @@ img {
 }
 
 .footer-distributed .footer-links a{
-	display:inline-block;
+	display:block;
 	line-height: 1.8;
   font-weight:400;
 	text-decoration: none;
@@ -938,10 +984,15 @@ img {
 }
 
 .footer-distributed .footer-company-name{
-	color:  #222;
-	font-size: 18px;
+	color:  #fff;
+	font-size: 20px;
 	font-weight: normal;
-	margin: 0;
+	margin: 2;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  float: ;
 }
 
 /* Footer Center */
@@ -1029,11 +1080,11 @@ img {
 }
 
 .footer-distributed .footer-icons a{
-	display: inline-block;
+	display: block;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #ffffff;
+	background-color:  #0e0e0e;
 	border-radius: 2px;
 
 	font-size: 20px;
